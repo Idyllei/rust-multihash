@@ -48,34 +48,34 @@ impl HashTypes {
     /// Get the hash length in bytes
     pub fn size(&self) -> u8 {
         match *self {
-	    HashTypes::SHA1     => 20,
-	    HashTypes::SHA2256  => 32,
-	    HashTypes::SHA2512  => 64,
-	    HashTypes::SHA3512  => 64,
+        HashTypes::SHA1     => 20,
+        HashTypes::SHA2256  => 32,
+        HashTypes::SHA2512  => 64,
+        HashTypes::SHA3512  => 64,
         HashTypes::SHA3384  => 48,
         HashTypes::SHA3256  => 32,
         HashTypes::SHA3224  => 28,
         HashTypes::SHAKE128 => 16,
         HashTypes::SHAKE256 => 32,
-	    HashTypes::Blake2b  => 64,
-	    HashTypes::Blake2s  => 32,
+        HashTypes::Blake2b  => 64,
+        HashTypes::Blake2s  => 32,
         }
     }
 
     /// Get the human readable name
     pub fn name(&self) -> &str {
         match *self {
-	    HashTypes::SHA1     => "SHA1",
-	    HashTypes::SHA2256  => "SHA2-256",
-	    HashTypes::SHA2512  => "SHA2-512",
-	    HashTypes::SHA3512  => "SHA3-512",
+        HashTypes::SHA1     => "SHA1",
+        HashTypes::SHA2256  => "SHA2-256",
+        HashTypes::SHA2512  => "SHA2-512",
+        HashTypes::SHA3512  => "SHA3-512",
         HashTypes::SHA3384  => "SHA3-384",
         HashTypes::SHA3256  => "SHA3-256",
         HashTypes::SHA3224  => "SHA3-224",
         HashTypes::SHAKE128 => "SHAKE-128",
         HashTypes::SHAKE256 => "SHAKE-256",
-	    HashTypes::Blake2b  => "Blake-2b",
-	    HashTypes::Blake2s  => "Blake-2s",
+        HashTypes::Blake2b  => "Blake-2b",
+        HashTypes::Blake2s  => "Blake-2s",
         }
     }
 
