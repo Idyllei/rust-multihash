@@ -36,11 +36,11 @@ multihash = "*"
 ```
 
 ```rust
-crate extern multihash
+extern crate multihash
 
 use multihash::{encode, decode, HashType};
 
-let hash = encode(HashTpype:SHA2256, "my hash").unwrap();
+let hash = encode(HashType::SHA256, "my hash").unwrap();
 let multi = decode(&hash).unwrap();
 ```
 
@@ -53,7 +53,7 @@ let multi = decode(&hash).unwrap();
 ## Dependencies
 
 This uses [libsodium](https://github.com/jedisct1/libsodium) and [sodiumoxide](https://github.com/dnaq/sodiumoxide)
-for the hashing so it depends on libsodium being installed.
+for the hashing, so it depends on libsodium being installed.
 
 ## Maintainers
 
